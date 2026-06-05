@@ -61,3 +61,14 @@ refactor(order): 重构订单状态逻辑
 - style
 - test
 - chore
+
+## 文档写作规范
+
+新增或编辑 `docs/` 下的文档时遵循以下约定（新增整页文档可用 `new-doc` skill 自动完成建文件 + 改侧边栏两步）：
+
+- **标题层级**：每篇文档以**单个** `#` 一级标题开头作为页面标题，正文用 `##` / `###` 逐级分层，不跳级。
+- **语言**：使用中文撰写；技术术语首次出现可中英对照，如「构建（build）」。
+- **代码块**：必须标注语言（` ```bash `、` ```ts ` 等）；命令示例应可直接执行。
+- **站内链接**：用以 `/` 开头的相对路径且**不带 `.md` 后缀**（如 `/guide/getting-started`），不要手写 `base` 前缀 `/Tosn-blog/`。新增内链后必须本地 `npm run docs:build` 验证死链（`ignoreDeadLinks: false`）。
+- **提示容器**：善用 VitePress 容器组织信息——`::: tip`（提示）、`::: warning`（注意）、`::: details`（折叠）。
+- **文件命名**：用小写 kebab-case 英文 slug（如 `deploy-guide.md`），保证 URL 稳定。
