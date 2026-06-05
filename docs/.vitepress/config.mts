@@ -40,7 +40,7 @@ export default defineConfig({
 
     // 社交链接（可选，按需修改/删除）
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/' }
+      { icon: 'github', link: 'https://github.com/Tosn/Tosn-blog' }
     ],
 
     // 页脚

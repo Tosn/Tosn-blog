@@ -11,7 +11,7 @@ hero:
       link: /guide/getting-started
     - theme: alt
       text: 在 GitHub 上查看
-      link: https://github.com/
+      link: https://github.com/Tosn/Tosn-blog
 
 features:
   - title: 📝 专注写作
