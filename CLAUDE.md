@@ -29,3 +29,35 @@ npm run docs:preview # 预览已构建的产物
 - **`base` 路径必须等于仓库名且区分大小写**：当前为 `base: '/Tosn-blog/'`（见 `config.mts`）。改仓库名或换部署位置时必须同步修改，否则线上 CSS / 链接全部 404。
 - `ignoreDeadLinks: false`：存在死链会导致 `docs:build` 失败，新增内部链接后务必本地 build 验证。
 - GitHub 端一次性设置：仓库 Settings → Pages → Source 必须选 **GitHub Actions**（非 branch 模式），否则 workflow 不会发布。
+
+## Git Commit Rules
+
+所有 git commit 必须遵循 Conventional Commits 规范：
+
+格式：
+
+<type>(scope): <subject>
+
+示例：
+
+feat(user): 新增登录功能
+fix(api): 修复 token 过期问题
+refactor(order): 重构订单状态逻辑
+
+要求：
+
+- subject 不超过 50 个字符
+- 使用中文
+- 不允许出现 "update" "fix bug" 等模糊描述
+- 必须说明具体改动
+- 一个 commit 只做一件事
+
+允许的 type：
+
+- feat
+- fix
+- refactor
+- docs
+- style
+- test
+- chore
