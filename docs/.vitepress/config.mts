@@ -143,6 +143,12 @@ export default defineConfig({
     nav,
     sidebar,
 
+    // 页面大纲（右侧「本页目录」）显示的标题层级：h2 ~ h4
+    outline: {
+      level: [2, 4],
+      label: '本页目录',
+    },
+
     // 自带本地搜索
     search: {
       provider: 'local',
